@@ -123,7 +123,7 @@ var pipeline = [
   {"$set": {
     "coinTypeAwardedCounts": arrayGroupByCount("rewards", "coin"),
     "coinTypeTotals": arrayGroupBySum("rewards", "coin", "amount"),
-    "_id": "$$REMOVE",e
+    "_id": "$$REMOVE",
     "rewards": "$$REMOVE",
   }},
 ];
